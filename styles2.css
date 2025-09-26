@@ -1,0 +1,164 @@
+/* Анимация для градиента */
+.animated-gradient {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff6ec4);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+    -webkit-animation: gradient-shift 3s linear infinite;
+    animation: gradient-shift 3s linear infinite;
+    display: inline-block;
+    padding: 0 2px;
+    font-size: 80px;
+}
+
+@-webkit-keyframes gradient-shift {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Анимация для фона всей страницы */
+body {
+    background: linear-gradient(45deg, #ffffff, #777777, #5a5a5a, #666666, #eff3ef);
+    background-size: 400% 400%;
+    animation: gradient-background 15s ease infinite;
+    color: var(--dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+@keyframes gradient-background {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav{
+      background-color: #a7a7a7;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 10px 80px #eff3ef;
+    transition: 2s;
+
+
+
+
+}
+a{
+    background-color: #000000;
+    transition: .3s;
+
+
+
+}
+a:hover{
+    background-color: #fdfdfd;
+    transition: .3s;
+
+
+
+
+}
+nav ul{
+    list-style: none;
+    width: 100;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+nav a{
+    display: block;
+    padding: 20px;
+    color: #fd0707;
+    font-weight: 5000;
+    text-decoration: none;
+    font-family: CustomFont;
+    width: 1000;
+    
+    
+
+
+
+}
+nav li:hover{
+    background-color: #a7a7a7;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+nav li{
+    transition: 0.8s;
+
+
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('USSR\ STENCIL\ WEBFONT.ttf') format('woff2'),
+         url('USSR\ STENCIL\ WEBFONT.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+section{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    size: 5cm;
+    width: 0.5;
+
+
+
+}
+video{
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    border-radius: 76% 31% 69% / 74% 28% 72% 26% 
+
+
+}
